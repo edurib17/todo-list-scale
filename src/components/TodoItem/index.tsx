@@ -28,7 +28,7 @@ export default function TodoItem({
 			editTodo(todo.id, newTitle, newDescription);
 			setIsEditing(false);
 		} else {
-			alert('Title cannot be empty');
+			alert('Título não pode ser vazio!');
 		}
 	}
 
