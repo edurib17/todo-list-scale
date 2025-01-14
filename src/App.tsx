@@ -67,10 +67,13 @@ export default function App() {
   }
 
   function removeTodo(id: number) {
-    const updatedTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(updatedTodos );
-    localStorage.setItem("todos", JSON.stringify(updatedTodos));
-    showAlert("green", "Lista atualizada com sucesso!", 3000);
+    const confirmDelete = window.confirm("Tem certeza que deseja remover esta tarefa?");
+    if (confirmDelete) {
+      const updatedTodos = todos.filter((todo) => todo.id !== id);
+      setTodos(updatedTodos);
+      localStorage.setItem("todos", JSON.stringify(updatedTodos));
+      showAlert("green", "Tarefa removida com sucesso!", 3000);
+    }
   }
 
   function showAlert(color: string, text: string, duration: number) {
