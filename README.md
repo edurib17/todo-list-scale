@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Todo List Scale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo de lista de tarefas simples, desenvolvido com **React**, **TypeScript**, **Vite** e utilizando **Node 16.20.2**.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta de build de próxima geração para desenvolvimento rápido.
+- **Node.js 16.20.2**: Ambiente de execução JavaScript no servidor.
 
-## Expanding the ESLint configuration
+## Como Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para rodar o projeto em ambiente de desenvolvimento, siga os passos abaixo:
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Clonar o repositório
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/edurib17/todo-list-scale.git
+cd todo-list-scale
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 3. Rodar o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+O aplicativo estará disponível em [http://localhost:5173](http://localhost:5173) (padrão do Vite).
